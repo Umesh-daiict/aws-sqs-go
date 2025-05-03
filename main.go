@@ -20,7 +20,7 @@ func main() {
 	queueUrl := "https://sqs.ap-south-1.amazonaws.com/216989136485/test-sqs"
 
 	// Send a message to the queue
-	messageBody := "Hello, this is a test message v2 from Go SDK! at" + time.Now().String()  
+	messageBody := "Hello, this is a test message v2 from Go SDK! at " + time.Now().String()  
 	err = sendMessageToSQS(client, queueUrl, messageBody)
 	if err != nil {
 		log.Fatalf("failed to send message, %v", err)
