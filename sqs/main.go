@@ -17,7 +17,7 @@ func main() {
 		log.Fatalf("unable to load SDK config, %v", err)
 	}
 	client := sqs.NewFromConfig(cfg)
-	queueUrl := "https://sqs.ap-south-1.amazonaws.com/216989136485/test-sqs"
+	queueUrl := "https://sqs.ap-south-1.amazonaws.com/21696553485/test-sqs"
 
 	// Send a message to the queue
 	messageBody := "Hello, this is a test message v2 from Go SDK! at " + time.Now().String()  
